@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Left Frame</title>
+
+<!-- Folha de estilo Geral -->
+<link href="css/master.css" rel="stylesheet" type="text/css" />
+
+<!-- Script para as tabelas do resultado de pesquisa -->
+<script type="text/javascript" src="js/tablecloth.js"></script>
+
+<!-- Script para as tabelas do treeView -->
+<script type="text/javascript" src="js/sitemapStyler.js"></script>
+
+</head>
+<body id="nav_body">
+
+<!-- Head do leftFrame-->
+	<div id="LogoHead"><img src="img/P.png" width="54" height="64" />Centro de ajudo ao usuário</div>
+    
+    <div class="frame"></div>
+
+<!-- Div com controles de pesquisa --> 
+	<div id="buscaLeftFrame">
+        <form id="fBusca" name="formBusca" method="post" action="">
+      		<br />
+            <br />
+            Digite a(s) palavra(s) para busca
+            <label>
+	 		  <input name="txt_pesquisa" type="text" disabled="disabled" id="txt_pesquisa" size="35px" readonly="readonly"/>
+  	    </label>
+	    	<label>
+   				<input name="btn_pesquisa" type="submit" id="btn_pesquisa" value="Buscar" />
+        	</label>
+        </form>
+        
+    <form id="fResPagina" name="formResultadoPagina" method="post" action="">    
+        	<br />
+   		Número de resultado(s) por página
+   		<input name="txt_QtdResulPagina" type="text" disabled="disabled" id="txt_QtdResulPagina" value="10" size="5px" maxlength="3" readonly="readonly" />
+      </form>     
+	</div>
+
+<!-- Div com separador-->	
+	<div class="frame"></div>
+    
+	<div id="tabMenu"> 
+    	<table id="tabSheet" cellspacing="0" cellpadding="" >
+ 			<td>Conteúdo/Index</td>
+			<td>Resultado da Pesquisa</td>
+    	</tr>
+		</table>
+    </div>
+
+<!-- Div da aba Conteúdo/Index-->    
+     <div id="contIndex" > <!-- não desativar!-->
+     	<!-- 
+    											CONTEÚDO
+   		-->
+		<!-- Conteúdo ativado -->
+    	<ul id="tabsRow" style="display:none">
+            <li>
+                <span class="highlight">Conteúdo</span> |
+            
+                <a class="tabOff" id="tab_cont" href="#">Index</a>
+            </li>
+         </ul>
+	<!-- Fim Conteúdo ativado -->
+    
+		<!--Inicio da TreeView -->           
+         <ul id="sitemap" style="display:none" >
+		  <li><a href="#">First link</a>
+				<ul>
+					<li><a href="#">First link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Second link</a></li>
+                    	<ul>
+             				<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+                       </ul>
+					<li><a href="#">Third link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Fourth link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+	    </li>
+			<li><a href="#">Second link</a>
+				<ul>
+					<li><a href="#">First link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Second link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Third link</a></li>
+					<li><a href="#">Fourth link</a></li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+			</li>
+			<li><a href="#">Third link</a>
+				<ul>
+					<li><a href="#">First link</a></li>
+					<li><a href="#">Second link</a></li>
+					<li><a href="#">Third link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Fourth link</a></li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+			</li>
+			<li><a href="#">Fourth link</a>
+				<ul>
+					<li><a href="#">First link</a></li>
+					<li><a href="#">Second link</a></li>
+					<li><a href="#">Third link</a></li>
+					<li><a href="#">Fourth link</a></li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+			</li>
+			<li><a href="#">Fifth link</a>
+				<ul>
+					<li><a href="#">First link</a></li>
+					<li><a href="#">Second link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Third link</a></li>
+					<li><a href="#">Fourth link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+			</li>
+	  </ul> 
+			<!--Fim da TreeView -->           
+    <!-- 
+    										INDEX
+    -->
+    <!--Alfabeto do index de pesquisa-->
+        <p id="ndxheader" style="display:none">
+ 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a title="index letter A" target="#" href="#"><b>A</b></a> 
+			<a title="index letter B" target="#" href="#"><b>B</b></a> 
+ 			<a title="index letter C" target="#" href="#"><b>C</b></a> 
+ 			<a title="index letter D" target="#" href="#"><b>D</b></a> 
+ 			<a title="index letter E" target="#" href="#"><b>E</b></a> 
+ 			<a title="index letter F" target="#" href="#"><b>F</b></a> 
+ 			<a title="index letter G" target="#" href="#"><b>G</b></a> 
+ 			<a title="index letter H" target="#" href="#"><b>H</b></a> 
+ 			<a title="index letter I" target="#" href="#"><b>I</b></a> 
+ 			<a title="index letter J" target="#" href="#"><b>J</b></a> 
+ 			<a title="index letter K" target="#" href="#"><b>K</b></a> 
+ 			<a title="index letter L" target="#" href="#"><b>L</b></a> 
+ 			<a title="index letter M" target="#" href="#"><b>M</b></a> 
+ 			<a title="index letter N" target="#" href="#"><b>N</b></a> 
+ 			<a title="index letter O" target="#" href="#"><b>O</b></a> 
+ 			<a title="index letter P" target="#" href="#"><b>P</b></a> 
+ 			<a title="index letter Q" target="#" href="#"><b>Q</b></a> 
+ 			<a title="index letter R" target="#" href="#"><b>R</b></a> 
+ 			<a title="index letter S" target="#" href="#"><b>S</b></a> 
+ 			<a title="index letter T" target="#" href="#"><b>T</b></a> 
+ 			<a title="index letter U" target="#" href="#"><b>U</b></a> 
+ 			<a title="index letter V" target="#" href="#"><b>V</b></a> 
+ 			<a title="index letter W" target="#" href="#"><b>W</b></a> 
+ 			<a title="index letter X" target="#" href="#"><b>X</b></a> 
+ 			<a title="index letter Y" target="#" href="#"><b>Y</b></a> 
+ 			<a title="index letter Z" target="#" href="#"><b>Z</b></a> 
+		</p>    
+			<!-- Index ativado -->
+    	<ul id="tabsRow" style="display:none">
+            <li>
+                <a class="tabOff" id="tab_index" href="#">Conteúdo</a> |
+            
+                <span class="highlight">Index</span>
+            </li>
+         </ul>
+         	<!-- Fim Index ativado -->
+         
+				<!--Inicio da TreeView -->           
+         <ul id="sitemap" style="display:none">
+		  <li><a href="#">First link</a>
+				<ul>
+					<li><a href="#">First link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Second link</a></li>
+                    	<ul>
+             				<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+                       </ul>
+					<li><a href="#">Third link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Fourth link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+	    </li>
+			<li><a href="#">Second link</a>
+				<ul>
+					<li><a href="#">First link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Second link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Third link</a></li>
+					<li><a href="#">Fourth link</a></li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+			</li>
+			<li><a href="#">Third link</a>
+				<ul>
+					<li><a href="#">First link</a></li>
+					<li><a href="#">Second link</a></li>
+					<li><a href="#">Third link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Fourth link</a></li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+			</li>
+			<li><a href="#">Fourth link</a>
+				<ul>
+					<li><a href="#">First link</a></li>
+					<li><a href="#">Second link</a></li>
+					<li><a href="#">Third link</a></li>
+					<li><a href="#">Fourth link</a></li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+			</li>
+			<li><a href="#">Fifth link</a>
+				<ul>
+					<li><a href="#">First link</a></li>
+					<li><a href="#">Second link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Third link</a></li>
+					<li><a href="#">Fourth link</a>
+						<ul>
+							<li><a href="#">First link</a></li>
+							<li><a href="#">Second link</a></li>
+							<li><a href="#">Third link</a></li>
+							<li><a href="#">Fourth link</a></li>
+							<li><a href="#">Fifth link</a></li>
+						</ul>							
+					</li>
+					<li><a href="#">Fifth link</a></li>
+				</ul>					
+			</li>
+	  </ul> 
+			<!--Fim da TreeView -->
+</div>
+
+<!-- Div dos resultados da pesquisa -->	
+    <div id="resultado" > 
+    	<br />
+  	  	<form id="fPesqResult" name="formPesquisaResultado" method="post" action="">
+       		<input name="txtPesqResult" type="text" disabled="disabled" id="txtPesqResult" value="Pesquisar palavra nos resultados" size="40px" readonly="readonly">
+    	  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  	  	</form>
+        <br />
+	<!-- Inicio da tabela de resultado -->        
+    	<table id="tabRes" cellspacing="0" cellpadding="0">
+		  <tr>
+				<th>Título</th>
+				<th>Classificação</th>
+		  </tr>
+			<tr>
+				<td>Data</td>
+				<td>Data</td>
+			</tr>			
+			<tr>
+				<td>Data2</td>
+				<td>Data2</td>
+			</tr>																							
+		</table>
+	<!-- Fim da tabela de resultado-->
+    </div> 
+	
+</body>
+</html>

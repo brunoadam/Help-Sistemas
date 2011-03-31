@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+body#nav_body {
+    background:  repeat-y scroll-no 100% 50% #FFFFFF;
+    padding: 10px 10px 10px 10px;
+}
+
+#LogoHead {
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #FFF;
+	font-size: 11px;
+	height: 80px;
+	width: 320px;
+	color:#336CA6;
+	left: 0px;
+	top: 0px;
+}
+
+.frame{
+    border-top: 1px solid #999999;
+    margin: 10px 0;
+	width: 320px;
+}
+
+#buscaLeftFrame {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	background-color: #FFF;
+	height: 120px;
+	width: 320px;
+	left: 0px;
+	top: 0px;
+}
+
+/* 
+Inicio estilo opção conteúdo/Index  
+*/
+ul#tabsRow {
+	list-style-type: none;
+	margin: 10px 0px 10px 0px;
+}
+
+ul#tabsRow li {
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.highlight {
+	font-style: normal;
+    font-weight: bold;
+}
+
+ul#tabsRow li span.highlight {
+    color: #000000
+}
+/* 
+Fim estilo opção conteúdo/Index
+ */
+
+
+/*
+inicio ConteúdoIndex
+*/
+#contIndex	{
+	width: 320px;
+	margin:0;
+	padding:0;
+	font:70% Arial, Helvetica, sans-serif; 
+	color:#555;
+	line-height:150%;
+	text-align:left;
+}
+
+#contIndex p {
+	margin:0 auto;
+	width:680px;
+	padding:1em 0;
+}
+
+#contIndex a {
+	text-decoration:none;
+	color:#057fac;
+}
+
+#contIndex a:hover {
+	text-decoration:none;
+	color:#057fac;
+}
+
+#ndxheader p {
+	margin-left: 10px;
+}
+
+#sitemap, #sitemap ul, #sitemap li{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#sitemap{background:url(../img/line1.gif)) repeat-y;}
+#sitemap li{
+	line-height:20px;
+	margin-top:1px;
+	position:relative;
+	width:100%;
+}
+
+* html #sitemap li{
+	float:left;
+	display:inline;
+}
+
+#sitemap li a{padding-left:28px;}
+#sitemap li span{float:left;position:absolute;top:5px;left:5px;width:13px;height:13px;cursor:auto;font-size:0;}
+#sitemap li span, #sitemap li span.collapsed{background:url(../img/collapsed.gif) no-repeat 0 0;} 
+#sitemap li span.expanded{background:url(../img/expanded.gif) no-repeat 0 0;}
+
+#sitemap li ul{	
+	margin-left:28px;
+	background:) repeat-y;
+}
+#sitemap li li{	
+	background:url(../img/line2.gif) no-repeat 0 0;
+}
+
+#sitemap:after, #sitemap ul:after{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+#sitemap, #sitemap ul{display:block;}
+
+#sitemap, #sitemap ul{min-height:1%;}
+* html #sitemap, * html #sitemap ul{height:1%;}
+
+#sitemap ul{display:none;}
+/*
+Fim ConteúdoIndex
+*/
+
+/*
+Inicio do bloco resultado da pesquisa
+*/
+#resultado {
+	background: #FFF;
+	margin: 5px 0px 3px 0px;
+	width: 320px;
+	height: auto;
+	border-width: 1px;
+	border-style:solid;
+	border-color:#C0C0C0
+}
+
+#tabMenu {
+	width: 320px;
+	
+}
+
+#tabSheet {
+	margin:0 0;
+	width: 100%;
+	height: 100%;
+	font-size: 15px;
+}
+
+#tabSheet a {
+	text-decoration: none;
+	color:#6AA3DB;
+}
+
+#tabSheet a:hover {
+	text-decoration: none;
+	color:#6AA3DB;
+}
+
+#tabSheet td:hover {
+	text-decoration: none;
+	color:#4ACBD9;
+	background:url(../img/tr_tabSheet.gif);
+}
+
+#tabSheet td {
+	font: 100% Arial, Helvetica, sans-serif; 
+}
+
+#tabSheet table{width:100%;border-collapse:collapse;margin:1em 0;}
+#tabSheet td{text-align:center;padding:.1em;border:1px solid #fff;}
+#tabSheet td{background:#328aa4 url(../img/tr_back.gif) repeat-x;color:#fff;}
+
+#tabRes a{
+	text-decoration:none;
+	color:#057fac;
+}
+#tabRes a:selected{
+	text-decoration:none;
+	color:#999;
+}
+
+#tabRes{
+	margin:0 0;
+	width: 320px;
+	font-size: 13px;	
+}
+
+#tabRes td{
+	font:100% Arial, Helvetica, sans-serif; 
+}
+#tabRes table{width:100%;border-collapse:collapse;margin:1em 0;}
+#tabRes th, td{text-align:left;padding:.1em;border:1px solid #fff;}
+#tabRes th{background:#328aa4 url(../img/tr_back.gif) repeat-x;color:#fff;}
+#tabRes td{background:#e5f1f4;}
+
+#tabRes tr.even td{background:#e5f1f4;}
+#tabRes tr.odd td{background:#f8fbfc;}
+
+#tabRes th.over, #tabRes tr.even  th.over, #tabRes tr.odd  th.over{background:#4a98af;}
+#tabRes th.down, #tabRes tr.even  th.down, #tabRes tr.odd  th.down{background:#bce774;}
+#tabRes th.selected, #tabRes tr.even  th.selected, #tabRes tr.odd  #tabRes th.selected{}
+
+#tabRes td.over, #tabRes tr.even  td.over, #tabRes tr.odd  td.over{background:#ecfbd4;}
+#tabRes td.down, #tabRes tr.even  td.down, #tabRes tr.odd  td.down{background:#bce774;color:#fff;}
+#tabRes td.selected, #tabRes tr.even td.selected, #tabRes tr.odd td.selected{background:#bce774;color:#555;}
+
+#tabRes td.empty, #tabRes tr.odd td.empty, #tabRes tr.even  td.empty{background:#fff;}
+/*
+Fim do bloco resultado da pesquisa
+*/
